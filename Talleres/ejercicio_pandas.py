@@ -17,3 +17,6 @@ lista_mercado_frame= pd.DataFrame({"enero":[3300,15600,4900,2200,9800],
                   "marzo":[4300,26000,5900,3100,12500],
                   "abril":[4900,30000,6200,3600,13400]},index=["frijol","carne","arroz","papa","aceite"])
 print(lista_mercado_frame)
+print(lista_mercado_frame[["febrero","marzo"]])
+print(lista_mercado_frame[["abril"]])
+
