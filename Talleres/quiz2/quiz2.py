@@ -5,7 +5,7 @@ import OrdenamientoMezcla
 import random
 
 size_list= int (input("Ingrese tamaño de la lista : "))
-lista = [random.randint(500,2000) for i in range(size_list)]
+lista = [random.randint(300,1230) for i in range(size_list)]
 lista_desordenada = lista
 print("se muestra la lista desordenada")
 print(lista_desordenada)
@@ -27,4 +27,5 @@ final_mezcla = time.time()-inicio
 print("se muestra la lista ordenada")
 print(lista_desordenada)
 print(f"el tiempo final de burbuja es {final_burbuja} y el de insercion {final_insercion} y el tiempo final de mezcla {final_mezcla}")
-print("La técnica de ordenamiento más eficiente es la de Inserción")
+
+#La técnica de ordenamiento más eficiente es la de Inserción
