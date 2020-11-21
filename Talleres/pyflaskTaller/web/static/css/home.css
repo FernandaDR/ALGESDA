@@ -1,0 +1,454 @@
+/*=======================
+COLORES
+=======================*/
+
+colores div::after{content: attr(class)}
+colores div{display:inline-block; color: white; padding: 0.5rem;margin-bottom:0.5rem;}
+
+/*FONDOS===============*/
+.azul-oscuro,
+html, body,
+nav, 
+.frase-cliche span, 
+.frase-cliche span::before, 
+.frase-cliche span::after, .filosofia, 
+.habilidades>header,
+.habilidades h5 span, .habilidades h5 .es::before, .habilidades h5 .es::after, 
+footer,
+.settings{
+background-color:rgb(102, 0, 102);
+background-image: src="{{url_for (static,filename = imagenes/home.jpeg)}}" alt="autumn";}
+
+.azul-medio,
+.contenedor>header,.habilidades{
+background-color:rgb(175, 0, 175);}
+.azul-claro,
+nav label[for*="menu"]{
+background-color:rgb(201, 26, 108);}
+.verde-azul{
+background-color:rgb(201, 26, 108);}
+.verde-mar{
+  background-color:rgb(201, 26, 128);}
+.verde-cyan,
+nav label[for*="config"]{
+  background-color:rgb(201, 26, 128);}
+.gris-medio{
+background-color:rgb(230, 230, 230);}
+.gris-claro,
+.portafolio{
+background-color:rgb(240,240,240);
+background-image: url('http://g3k.co/g3k/img/ui/color-gris-claro.png');}
+.casi-blanco{
+background-color:rgb(250,250,250);}
+.blanco{
+background-color:rgb(255,255,255);}
+/*---------------------*/
+/*LETRA===============*/
+letra-blanco,
+
+.letra-verde-cyan,
+a:link,
+nav .menu a:focus, nav .menu a:hover, nav .menu a:active {
+  color: rgb(242, 248, 246);
+}
+/*---------------------*/
+.contenedor main>section, footer
+{
+  min-height: 50vh;
+}
+
+/*------------------------Elementos*/
+
+*,*::after,*::before
+{
+box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  transition: all ease 0.5s;
+}
+*::before,*::after
+{
+  display: inline-block;
+}
+
+html, body
+{
+  text-align:center;
+  font: 16px/1.5rem "open sans", arial, sans-serif;
+  color: white;
+}
+nav, header, main, section, footer
+{
+  position: relative;
+  z-index: 20;
+}
+img
+{
+width:100%
+}
+
+section:not(.habilidades)>header::before,
+section:not(.habilidades)>header::after
+{
+content: '';
+  background-size: 100% 100%;
+  background-image: url('http://g3k.co/g3k/img/ui/linea-horizontal-f-blanco.png');
+  width: 100%;
+  height: 2.5rem;
+}
+
+section>header
+{  
+  padding: 1rem 0;
+}
+
+section>header::before
+{
+  transform: scaleX(-1);
+}
+
+h1, h2, h3, h4, h5, h6
+{
+  font-family: 'rawen', helvetica, arial;
+  font-weight: normal;
+}
+
+
+h1
+{
+font-family: /*'rawen-light',*/'rawen', open-sans, arial, sans-serif;
+  font-size: 1.9rem;
+}
+
+h2
+{
+  display: inline-block;
+  position: relative;
+  font-size: 1.4rem;
+  line-height: 3rem;
+  padding: 0 1.3rem;
+  letter-spacing: -0.05rem;
+}
+
+h3
+{
+  font-size: 2rem;
+  padding: 0.5rem;
+  margin: 1rem;
+  line-height: 2rem;  
+}
+
+h4
+{
+  padding: 0.3rem;
+  position: relative; 
+}
+
+h4 .lang.es
+{
+  position: relative; 
+}
+
+h4 .lang::before,
+h4 .lang::after
+{
+  content:'';
+  width: 6rem;
+  height: 2.5rem;
+  position: absolute;
+  right: 110%;
+  transform: scaleX(-1);
+  will-change: transform, background, height;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url('http://g3k.co/g3k/img/ui/grafismo-gradiante.png');
+  top: -0.5rem;
+}
+
+h4 .lang::after
+{
+  right: inherit;
+  left: 110%;
+  transform: scaleX(1);
+}
+
+h3, h4
+{
+  font-weight: normal;
+}
+
+/*------------------------clases generales*/
+
+.contenedor
+{
+max-width: 225rem;
+  margin: auto;
+  overflow: hidden;
+}
+
+.en
+{
+  position: absolute;
+  left: 150%;
+}
+
+input[id*="ctrl"]
+{
+  display: none;
+}
+
+
+/*------------------------clases por seccion*/
+
+
+/*------------------------
+
+/*------------------------
+SECCIÓN HEADER
+--------------------------*/
+
+.contenedor>header
+{
+  min-height: 20vh;
+  padding-top: 5.5rem;
+  z-index: 25;
+  will-change: background, transform;
+  background-size: 100% 100%;
+  background-position: center center;
+  background-image: 
+    radial-gradient(
+      to center, 
+      rgba(78, 0, 102, 0) 50%, 
+      rgb(65, 0, 102) 100%)  
+}
+
+.contenedor>header::before
+{
+  content:'';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: 
+    rgba(0, 0, 0, 0); 
+  background-size: 50% 15%;
+  background-position: 0% 5%, 100% 5%;
+  background-repeat: no-repeat;
+  background-image: url('http://g3k.co/g3k/img/ui/iceberg-arriba-izq.png'), url('http://g3k.co/g3k/img/ui/iceberg-arriba-der.png');
+}
+
+.contenedor>header::after
+{
+content: '';
+width: 100%;
+height: 4rem;
+position: absolute;
+  left: 0;
+  bottom: 0%;
+  background-repeat: no-repeat;
+  background-position: bottom left, bottom right;
+  background-size: 50% 70%, 100% 100%, 0% 0%;
+background-image: url('http://g3k.co/g3k/img/ui/short-montain.png'), url('http://g3k.co/g3k/img/ui/middle-montain-der.png'), url('http://g3k.co/g3k/img/ui/long-montain-azul.png');
+}
+
+.contenedor h1::before,
+.contenedor h1::after
+{
+  content:'';
+  position: absolute;
+  z-index: -1;
+  width: 20%;
+  height: 100%;
+  top: 0;
+  will-change: transform, background-position;
+  animation: triangulos-fondo 2s linear infinite;
+  background-size: 125% auto;
+  background-position: 0% 50%;
+}
+
+.contenedor h1::before
+{
+  left: 0;
+  background-image: url('http://g3k.co/g3k/img/svg/triangulos.svg');
+}
+
+.contenedor h1::after
+{
+  right:0;
+  background-image: url('http://g3k.co/g3k/img/svg/triangulos2.svg');
+}
+
+.bienvenidos
+{
+  /*width: 20rem;*/
+  background: rgba(201, 26, 128, 0.8);
+}
+
+.bienvenidos, .g3k
+{ 
+  line-height: 3rem;
+  display: inline-block;
+  position: relative;
+  padding: 0 0.5rem;
+}
+
+.bienvenidos::before,
+.bienvenidos::after,
+.g3k::before,
+.g3k::after,
+h2::before,
+h2::after
+{
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 1.5rem 1rem;
+top: 0;
+}
+
+.bienvenidos::before
+{
+  border-color: 
+    transparent 
+    transparent 
+    rgba(201, 26, 128, 0.8)
+    rgba(201, 26, 128, 0.8) ;
+  left: 100%;    
+}
+
+.bienvenidos::after
+{
+  border-color: 
+    rgba(201, 26, 128, 0.8)
+    rgba(201, 26, 128, 0.8) 
+    transparent transparent;
+  right: 100%;  
+}
+
+.g3k
+{  
+margin-left: 0.5rem;
+text-transform: uppercase;
+  font-family: 'g3k', open-sans, arial;
+  font-size: 1.3rem;
+  letter-spacing: -0.2rem;
+  font-weight: normal;
+}
+
+.g3k, h2
+{
+background-color:rgba(61, 0, 102, 0.5);  
+}
+
+.g3k::before
+{
+  border-color:  
+    rgba(90, 0, 102, 0.5)
+    rgba(90, 0, 102, 0.5)
+    transparent transparent;
+  right: 100%;    
+}
+
+.g3k::after
+{
+  border-color:
+    rgba(70, 0, 102, 0.5)
+    transparent 
+    transparent 
+    rgba(70, 0, 102, 0.5);
+  left: 100%;  
+}
+
+h2::before
+{
+  border-color: 
+    transparent  
+    rgba(78, 0, 102, 0.5)
+    rgba(78, 0, 102, 0.5)
+    transparent;
+  right: 100%;    
+}
+
+h2::after
+{
+  border-width: 1.5rem 1rem;
+  border-color:
+    transparent transparent 
+    rgba(78, 0, 102, 0.5)
+    rgba(78, 0, 102, 0.5);
+  left: 100%;  
+}
+
+
+
+
+
+/*------------------------
+$ANIMACIONES
+--------------------------*/
+@keyframes gradius
+{
+  0%{transform: translateX(0%);}
+  50%{transform: translateX(600%);}
+  100%{transform: translateX(600%);}
+}
+
+@keyframes triangulos-fondo
+{
+  0%{background-position: 0% 50%;}
+  100%{background-position: 496% 50%;}
+}
+
+
+
+@keyframes aparece
+{
+  20%{opacity: 0;}
+  50%{opacity: 1;}
+  100%{opacity: 1;}
+}
+
+@keyframes aparece-abajo
+{
+  20%{
+  opacity: 0;
+  transform: translate(0%,20%);}
+  50%{
+  opacity: 1;
+  transform: translate(0%,-3%);}
+  55%{
+  transform: translate(0%,1.5%);}
+  60%{
+  transform: translate(0%,0%);}
+  100%{
+  opacity: 1;
+  transform: translate(0%,0%);}
+}
+
+@keyframes aparece-arriba
+{
+  0%{
+  opacity: 0;
+  transform: translate(0%,-20%);}
+  50%{
+  opacity: 1;
+  transform: translate(0%,2%);}
+  55%{
+  transform: translate(0%,-1%);}
+  100%{
+  opacity: 1;
+  transform: translate(0%,0%);}
+}
+/*
+@keyframes flotando
+{
+  0%{transform: translate(0%,0%);}
+  25%{transform: translate(-1.5%,0.5%);}
+  55%{transform: translate(0%,1.2%);}  
+  65%{transform: translate(1.2%,-0.5%);}
+  90%{transform: translate(0.5%,-1.5%);}
+  100%{transform: translate(0%,0%);}
+}
+
+*/

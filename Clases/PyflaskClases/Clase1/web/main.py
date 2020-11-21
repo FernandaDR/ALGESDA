@@ -1,27 +1,21 @@
 from flask import Flask, request, make_response, redirect, render_template
-
 # se crea un objeto del tipo app
 app = Flask(__name__)
 
-@app.route('/')
-def homeRoute():
+@app.route ('/')
+def home():
     user_ip = request.remote_addr
     response = make_response(redirect('hello'))
     response.set_cookie('ip',user_ip)
-    response.set_cookie('gato','Lior Herrera')
-    return render_template('home.html')
+    response.set_cookie('dog','klaus')
+    return response
 
 
 @app.route('/hello')
 def helloRoute():
-    gato = request.cookies.get('gato')
+    dog = request.cookies.get('dog')
     ip = request.cookies.get('ip')
-    return render_template('hello.html', 
-    mascota = gato, userIp = ip)
-@app.route('/hey')
-def heyRoute():
-    return render_template('hey.html')
-
+    return render_template('hello.html',mascota = dog, userIp = ip)
 
 
 if __name__ == '__main__':

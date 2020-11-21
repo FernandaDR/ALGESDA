@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APP | Lugares</title>
+    <link rel="stylesheet" href="{{url_for ('static',filename ='css/lugaresFav.css')}}">
+</head>
+<body>
+    <div class="contenedor"> 
+        <div class="cubo">
+        <div class="cara">
+        <img src="{{url_for (static,filename = image/clima.jpeg)}}" title="Casa en Medellín" alt="Casa en Medellín" height: "290px" width="290px" >
+        </div>
+        <div class="cara">
+        <img src="{{url_for (static,filename = image/home.jpeg)}}" title="Tibú, Norte de Santander" alt="Tibú, Norte de Santander" width="290px" height: "290px">
+        </div>
+        <div class="cara">
+        <img src="{{url_for (static,filename = image/inicio.jpeg)}}" title="Medellín desde UCES" alt="Medellín desde UCES" width="290px" height: "290px">
+        </div>
+        <div class="cara">
+        <img src="{{url_for (static,filename = image/paramo.jpeg)}}" title="Páramo de Berlín" alt="Páramo de Berlín" width="290px" height: "290px">
+        </div>
+        <div class="cara">
+        <img src="{{url_for (static,filename = image/casa2.jpeg)}}" title="Casa de mis tías" alt="Casa de mis tías" width="290px" height: "290px">
+        </div>
+        <div class="cara">
+        <img src="{{url_for (static,filename = image/casa1.jpeg)}}" title="Casa de mi Abuela" alt="Casa de mi Abuela" width="290px" height: "290px">
+        </div>
+        <div class="cara-fondo"></div>
+        <div class="cara-fondo"></div>
+        <div class="cara-fondo"></div>
+        <div class="cara-fondo"></div>
+        <div class="cara-fondo"></div>
+        <div class="cara-fondo"></div>
+        <div class="cara-fondo"></div>
+        <div class="cara-fondo"></div>
+        </div>
+        </div>
+        <a href="/home">Volver al inicio</a>
+</body>
+</html>

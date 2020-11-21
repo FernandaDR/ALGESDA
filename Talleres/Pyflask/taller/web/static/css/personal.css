@@ -1,0 +1,17 @@
+  
+body{
+	margin: 0;
+	padding: 0;
+	background: black;
+
+	color: whitesmoke;
+	font-family: Arial;
+	font-size: 12px;
+}
+.img{
+    height: 30%;
+    width: 35%;
+    margin:auto;
+    border-radius: 20%;
+    border-color: rgb(247, 250, 247);
+}

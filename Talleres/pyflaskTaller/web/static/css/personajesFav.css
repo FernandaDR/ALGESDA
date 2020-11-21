@@ -1,0 +1,181 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+  background: #fff;
+  color: #333;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.checkbox{
+  display: none;
+}
+
+img{
+  width: 127px;
+  cursor: pointer;
+  position: absolute;
+}
+
+.mosaico{
+  margin: 5px;
+}
+
+/* IMAGEM 1 */
+#img1:not(:checked) + label img{
+  width: 127px;
+  transition: all 0.7s;
+  z-index: 0;
+}
+
+#img1:checked + label img{
+  width: 390px;
+  transition: all 0.7s;
+  z-index: 100;
+}
+
+/* IMAGEM 2 */
+#img2:not(:checked) + label img{
+  left: 136px;
+  width: 127px;
+  z-index: 0;
+  transition: all 0.7s;
+}
+
+#img2:checked + label img{
+  left: 5px;
+  width: 390px;
+  transition: all 0.7s;
+  z-index: 100;
+}
+
+/* IMAGEM 3 */
+#img3:not(:checked) + label img{
+  left: 267px;
+  width: 127px;
+  z-index: 0;
+  transition: all 0.7s;
+}
+
+#img3:checked + label img{
+  left: 5px;
+  width: 390px;
+  transition: all 0.7s;
+  z-index: 100;
+}
+
+/* IMAGEM 4 */
+#img4:not(:checked) + label img{
+  top: 136px;
+  width: 127px;
+  transition: all 0.7s;
+  z-index: 0;
+}
+
+#img4:checked + label img{
+  top: 5px;
+  width: 390px;
+  transition: all 0.7s;
+  z-index: 100;
+}
+
+/* IMAGEM 5 */
+#img5:not(:checked) + label img{
+  top: 136px;
+  left: 136px;
+  width: 127px;
+  z-index: 0;
+  transition: all 0.7s;
+}
+
+#img5:checked + label img{
+  top: 5px;
+  left: 5px;
+  width: 390px;
+  transition: all 0.7s;
+  z-index: 100;
+}
+
+/* IMAGEM 6 */
+#img6:not(:checked) + label img{
+  top: 136px;
+  left: 267px;
+  width: 127px;
+  z-index: 0;
+  transition: all 0.7s;
+}
+
+#img6:checked + label img{
+  top: 5px;
+  left: 5px;
+  width: 390px;
+  transition: all 0.7s;
+  z-index: 100;
+}
+
+/* IMAGEM 7 */
+#img7:not(:checked) + label img{
+  top: 268px;
+  width: 127px;
+  transition: all 0.7s;
+  z-index: 0;
+}
+
+#img7:checked + label img{
+  top: 5px;
+  width: 390px;
+  transition: all 0.7s;
+  z-index: 100;
+}
+
+/* IMAGEM 8 */
+#img8:not(:checked) + label img{
+  top: 268px;
+  left: 136px;
+  width: 127px;
+  z-index: 0;
+  transition: all 0.7s;
+}
+
+#img8:checked + label img{
+  top: 5px;
+  left: 5px;
+  width: 390px;
+  transition: all 0.7s;
+  z-index: 100;
+}
+
+/* IMAGEM 9 */
+#img9:not(:checked) + label img{
+  top: 268px;
+  left: 267px;
+  width: 127px;
+  z-index: 0;
+  transition: all 0.7s;
+}
+
+#img9:checked + label img{
+  top: 5px;
+  left: 5px;
+  width: 390px;
+  transition: all 0.7s;
+  z-index: 100;
+}
